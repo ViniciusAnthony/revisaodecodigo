@@ -1,17 +1,18 @@
-num1 = int(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+def dados(nome, email, idade, categoria):
+    print("\n=== DADOS CADASTRADOS ===")
+    print("Nome:", nome)
+    print("E-mail:", email)
+    print("Idade:", idade)
+    print("Categoria:", categora)
 
-operacao = input("Digite a operação (+, -, *, /): ")
 
-if operacao == "+":
-    resultado = num1 + num2
-elif operacao == "-":
-    resultado = num1 - num2
-elif operacao == "*":
-    resultado = num1 * num2
-elif operacao == "/":
-    resultado = num1 / num2
+nome = input("Digite seu nome: ")
+email = input("Digite seu e-mail: ")
+idade = int(input("Digite sua idade: "))
+
+if idade <= 18:
+    categoria = "Maior de idade"
 else:
-    print("Operação inválida!")
+    categoria = "Menor de idade"
 
-print("Resultado:", resultad)
+dados(nome, email, idade, categoria)
