@@ -3,14 +3,14 @@ def mostrar_dados(nome, email, idade, categoria):
     print("Nome:", nome)
     print("E-mail:", email)
     print("Idade:", idade)
-    print("Categoria:", categora)
+    print("Categoria:", categoria)
 
 
 nome = input("Digite seu nome: ")
 email = input("Digite seu e-mail: ")
 idade = int(input("Digite sua idade: "))
 
-if idade <= 18:
+if idade >= 18:
     categoria = "Maior de idade"
 else:
     categoria = "Menor de idade"
