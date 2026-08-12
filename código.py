@@ -1,4 +1,4 @@
-def dados(nome, email, idade, categoria):
+def mostrar_dados(nome, email, idade, categoria):
     print("\n=== DADOS CADASTRADOS ===")
     print("Nome:", nome)
     print("E-mail:", email)
@@ -15,4 +15,4 @@ if idade <= 18:
 else:
     categoria = "Menor de idade"
 
-dados(nome, email, idade, categoria)
+mostrar_dados(nome, email, idade, categoria)
